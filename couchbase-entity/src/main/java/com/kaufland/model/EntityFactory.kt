@@ -56,7 +56,7 @@ object EntityFactory {
 
         parseStaticsFromStructure(cblEntityElement) {
             if (it.getAnnotation(GenerateAccessor::class.java) != null) {
-                content.generateAccessors.add(CblGenerateAccessorHolder(content.sourceClazzSimpleName, it))
+                content.generateAccessors.add(CblGenerateAccessorHolder(content.sourceClazzTypeName, it))
             }
             it.getAnnotation(DocIdSegment::class.java)?.apply {
                 docIdSegments.add(DocIdSegmentHolder(this, it))

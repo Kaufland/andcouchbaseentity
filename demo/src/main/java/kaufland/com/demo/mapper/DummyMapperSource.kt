@@ -5,7 +5,6 @@ import kaufland.com.coachbasebinderapi.mapify.Mapify
 import kaufland.com.coachbasebinderapi.mapify.Mapifyable
 import kaufland.com.coachbasebinderapi.mapify.Mapper
 import kaufland.com.demo.entity.ProductEntity
-import kaufland.com.demo.entity.TestClass
 import java.io.Serializable
 import java.math.BigDecimal
 

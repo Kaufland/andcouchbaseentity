@@ -49,6 +49,9 @@ abstract class BaseEntityHolder {
     val sourceClazzSimpleName: String
         get() = (sourceElement as Symbol.ClassSymbol).simpleName.toString()
 
+    val sourceClazzTypeName: TypeName
+        get() = ClassName(`package`, sourceClazzSimpleName)
+
     open val entitySimpleName: String
         get() = sourceClazzSimpleName + "Entity"
 
